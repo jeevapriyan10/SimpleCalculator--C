@@ -26,9 +26,9 @@ int intro(){
     float result;
     switch(choice){
         case 1: //addition
-            printf("\nenter number 1: ");
+            printf("\nEnter Number 1: ");
             scanf("%f",&num1);
-            printf("enter number 2: ");
+            printf("Enter Number 2: ");
             scanf("%f",&num2);
             result = num1 + num2;  //operation
             printf("\n------------------------------------------");
@@ -37,9 +37,9 @@ int intro(){
             break;
 
         case 2: //subraction
-            printf("\nenter number 1: ");
+            printf("\nEnter Number 1: ");
             scanf("%f",&num1);
-            printf("enter number 2: ");
+            printf("Enter Number 2: ");
             scanf("%f",&num2);
             result = num1 - num2; //operation
             printf("\n------------------------------------------");
@@ -48,9 +48,9 @@ int intro(){
             break;
 
         case 3: //multiplication
-            printf("\nenter number 1: ");
+            printf("\nEnter Number 1: ");
             scanf("%f",&num1);
-            printf("enter number 2: ");
+            printf("Enter Number 2: ");
             scanf("%f",&num2);
             result = num1 * num2; //operation
             printf("\n------------------------------------------");
@@ -59,9 +59,9 @@ int intro(){
             break;
 
         case 4: //division
-            printf("\nenter number 1: ");
+            printf("\nEnter Number 1: ");
             scanf("%f",&num1);
-            printf("enter number 2: ");
+            printf("Enter Number 2: ");
             scanf("%f",&num2);
             result = num1 / num2; //operation
             printf("\n------------------------------------------");
@@ -70,7 +70,7 @@ int intro(){
             break;
 
         case 5: //square-root
-            printf("\nenter a number : ");
+            printf("\nEnter a Number : ");
             scanf("%f",&num);
             result = sqrt(num); //operation
             printf("\n------------------------------------------");
@@ -79,9 +79,9 @@ int intro(){
             break;
 
         case 6: //power
-            printf("\nenter number 1: ");
+            printf("\nEnter Number 1 (Base) : ");
             scanf("%f",&num1);
-            printf("enter number 2: ");
+            printf("Enter Number 2 (Power) : ");
             scanf("%f",&num2);
             result = pow(num1,num2); //operation
             printf("\n------------------------------------------");
@@ -90,7 +90,7 @@ int intro(){
             break;
 
         case 7: //round-off
-            printf("\nenter a number : ");
+            printf("\nEnter a Number : ");
             scanf("%f",&num);
             result = round(num);//operation
             printf("\n------------------------------------------");
@@ -106,9 +106,9 @@ int main(){
     do
     {
         intro();
-        printf("\nWant To Do Again? Type \"Y\": ");
+        printf("\nWant To Do Again? (Y/N) : ");
         scanf("%s",&repeat);
-    } while(repeat == 'Y');
+    } while(repeat == 'Y' || repeat == 'y');
     return 0;
 }
 
